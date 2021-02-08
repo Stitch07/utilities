@@ -13,6 +13,7 @@ export declare class AsyncQueue {
     /**
      * Waits for last promise and queues a new one
      * @example
+     * ```
      * const queue = new AsyncQueue();
      * async function request(url, options) {
      *     await queue.wait();
@@ -28,6 +29,7 @@ export declare class AsyncQueue {
      * request(someUrl1, someOptions1); // Will call fetch() immediately
      * request(someUrl2, someOptions2); // Will call fetch() after the first finished
      * request(someUrl3, someOptions3); // Will call fetch() after the second finished
+     * ```
      */
     wait(): Promise<void>;
     /**
