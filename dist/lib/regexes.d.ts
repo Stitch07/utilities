@@ -102,4 +102,13 @@ export declare const UserOrMemberMentionRegex: RegExp;
  * @remark for regular HTTP URLs see [[HttpUrlRegex]]
  */
 export declare const WebSocketUrlRegex: RegExp;
+/**
+ * Regex that captures the Webhook ID and token from a Discord Webhook URL.
+ * @raw `/(?<url>^https:\/\/(?:(?:canary|ptb).)?discordapp.com\/api\/webhooks)\/(?<id>\d+)\/(?<token>[\w-]+)\/?$/`
+ * @remark Capture group 1 is the full URL of the Discord Webhook. It is named `url`.
+ * @remark Capture group 2 is the ID of the Discord Webhook. It is named `id`.
+ * @remark Capture group 3 is the token of the Discord Webhook. It is named `token`.
+ * @remark for regular HTTP URLs see [[HttpUrlRegex]]
+ */
+export declare const WebhookRegex: RegExp;
 //# sourceMappingURL=regexes.d.ts.map
