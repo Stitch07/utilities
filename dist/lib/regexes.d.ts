@@ -89,7 +89,7 @@ export declare const SnowflakeRegex: RegExp;
  * Regex that can capture a Twemoji (Twitter Emoji)
  * @raw {@link https://github.com/twitter/twemoji-parser/blob/master/src/lib/regex.js See official source code}
  */
-export declare const TwemojiRegex: string;
+export declare const TwemojiRegex: RegExp;
 /**
  * Regex that can capture the ID of a user in Discord user mentions
  * @raw `/^<@!?(?<id>\d{17,19})>$/`
